@@ -74,9 +74,9 @@ ifneq ($(CONFIG_BCM4359),)
 ifeq ($(shell expr $(MAJOR_VERSION) \>= 9),1)
 $(warning platform version 3 : $(PLATFORM_VERSION))
 $(warning MAJOR_VERSION version 3: $(MAJOR_VERSION))
-obj-$(CONFIG_BCM4359)   += bcmdhd4359_100/
-obj-$(CONFIG_SOC_EXYNOS8890) += bcmdhd4359_100/dhd_custom_memprealloc.o
-obj-$(CONFIG_SOC_EXYNOS8890) += bcmdhd4359_100/dhd_custom_exynos.o
+obj-$(CONFIG_BCM4359)   += bcmdhd_100_15/
+obj-$(CONFIG_SOC_EXYNOS8890) += bcmdhd_100_15/dhd_custom_memprealloc.o
+obj-$(CONFIG_SOC_EXYNOS8890) += bcmdhd_100_15/dhd_custom_exynos.o
 else
 $(warning platform version 4 : $(PLATFORM_VERSION))
 $(warning MAJOR_VERSION version 4: $(MAJOR_VERSION))
