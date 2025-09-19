@@ -83,11 +83,12 @@ CR_RAMDISK=$CR_RAMDISK_Q
 CR_HALLIC="1"
 # Compiler Paths
 CR_GCC12=~/Android/Toolchains/aarch64-linux-gnu-12.x/bin/aarch64-linux-gnu-
-CR_GCC11=~/Android/Toolchains/aarch64-linux-gnu-11.x/bin/aarch64-linux-gnu-
-CR_GCC9=~/Android/Toolchains/aarch64-linux-gnu-9.x/bin/aarch64-linux-gnu-
-CR_CLANG=~/Android/Toolchains/clang-r399163/bin
-CR_GCC4=~/Android/Toolchains/aarch64-linux-android-4.9/bin/aarch64-linux-android-
-CR_LINARO=~/Android/Toolchains/aarch64-linaro-4.9.4-linux-gnu/bin/aarch64-linux-gnu-
+CR_GCC11=~/gcc-arm-11.2-2022.02-x86_64-aarch64-none-linux-gnu/bin/aarch64-none-linux-gnu-
+CR_GCC9=~/Exynos8890-source-tools/compiler/gcc/gcc-arm-9.2-arm64/bin/aarch64-none-linux-gnu-
+CR_CLANG=~/Exynos8890-source-tools/compiler/clang/proton-clang13-llvm-20210522/bin
+CR_GCC4=~/Exynos8890-source-tools/compiler/gcc/google-gcc-4.9/bin/aarch64-linux-android-
+CR_LINARO=~/Exynos8890-source-tools/compiler/gcc/gcc-linaro-4.9.4-arm64/bin/aarch64-linux-gnu-
+CR_LINARO6=~/Exynos8890-source-tools/compiler/gcc/gcc-linaro-6.5.0-arm64/bin/aarch64-linux-gnu-
 #####################################################
 
 # Compiler Selection
