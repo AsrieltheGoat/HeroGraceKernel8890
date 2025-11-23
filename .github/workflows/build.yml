@@ -1,0 +1,20 @@
+name: Kernel Build CI
+on:
+  workflow_dispatch:
+jobs:
+  build-kernel:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Build Kernel
+        uses: dabao1955/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/AsrieltheGoat/HeroGraceKernel8890
+          kernel-branch: dev
+          config: .config
+          arch: arm64
+          android-version: 10
+          aosp-gcc: true
+          aosp-clang: false
+          disable-lto: true
+          anykernel3: false
+          bootimg-url: https://github.com/AsrieltheGoat/HeroGraceKernel8890/releases/download/hero2lte/HeroGraceKernel-V1.0-G935X-20251115-ksu.img
